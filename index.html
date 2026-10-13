@@ -1,0 +1,22 @@
+<!doctype html><html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>مدير المصروفات</title><link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrap hero"><div>
+                <span class="eyebrow">خطط لأموالك بذكاء</span>
+                <h1>مدير المصروفات</h1><p>تابع دخلك ومصروفاتك في مكان واحد.</p>
+            </div><div class="icon">💳</div></div>
+        </header>
+        <main class="wrap">
+            <section class="summary"><article>
+                <span>الرصيد الحالي</span>
+                <strong id="balance">0.00 ₪</strong>
+                <small>الدخل ناقص المصروفات</small>
+            </article><article>
+                <span>إجمالي الدخل</span>
+                <strong id="income">0.00 ₪</strong>
+                <small>كل المبالغ الداخلة</small></article><article><span>إجمالي المصروفات</span><strong id="expense">0.00 ₪</strong><small>كل المبالغ الخارجة</small></article></section><div class="columns"><section class="card"><h2>إضافة حركة مالية</h2><p class="muted">سجّل دخلك أو مصروفك الجديد</p><form id="txForm"><label>وصف الحركة<input id="description" required placeholder="مثال: مشتريات المنزل"></label><div class="two"><label>المبلغ (₪)<input id="amount" type="number" min="0.01" step="0.01" required placeholder="0.00"></label><label>النوع<select id="type"><option value="expense">مصروف</option><option value="income">دخل</option></select></label></div><label>التصنيف<select id="category"><option>طعام</option><option>مواصلات</option><option>فواتير</option><option>تعليم</option><option>راتب</option><option>مساعدات</option><option>أخرى</option></select></label><button class="primary">إضافة الحركة</button></form></section><section class="card"><div class="headrow"><div><h2>سجل الحركات</h2><p class="muted">كل الحركات المسجلة</p></div><button id="clear" class="ghost">مسح الكل</button></div><div id="transactions" class="transactions"></div><p id="empty" class="empty">لا توجد حركات مالية بعد.</p></section></div></main><footer>بياناتك محفوظة في هذا المتصفح فقط · HTML / CSS / JavaScript</footer><script src="script.js"></script></body></html>
